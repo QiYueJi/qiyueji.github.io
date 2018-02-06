@@ -1,4 +1,5 @@
 import os
 
-os.system("git add .")
 
+
+os.system("git push -f origin master")
