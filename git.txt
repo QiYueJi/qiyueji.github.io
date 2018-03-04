@@ -1,0 +1,17 @@
+# -*- coding: cp936 -*-
+
+import os
+
+os.system("cd ../.deploy/qiyueji.github.io")
+os.system("git add .")
+#os.system("echo git commit -m ¡°update¡±")
+
+
+
+
+
+git add .
+
+git commit -m "update"
+
+git push -f origin master
