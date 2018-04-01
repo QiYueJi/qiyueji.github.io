@@ -105,14 +105,14 @@
 
 <div id="app">
     <my-header custom-title="Contract" custom-fixed>
-        <button @touchstart="backBtn" slot="left">back</button>
-        <button @touchstart="homeBtn" slot="right">home</button>
+        <button @touchstart="backBtn" slot="left">返回</button>
+        <button @touchstart="homeBtn" slot="right">首页</button>
     </my-header>
     <my-list :user-data="userData"></my-list>
     <my-alert custom-title="Call">
         <div class="alert_btn">
-            <button @touchstart="confirmBtn">confirm</button>
-            <button @touchstart="cancelBtn">cancel</button>
+            <button @touchstart="confirmBtn">确认</button>
+            <button @touchstart="cancelBtn">取消</button>
         </div>
     </my-alert>
 </div>
@@ -292,13 +292,13 @@
         },
         methods: {
             backBtn: function () {
-                alert("back")
+                alert("返回")
             },
             homeBtn: function () {
-                alert("home")
+                alert("首页")
             },
             confirmBtn: function () {
-                alert(78)
+                alert("确认")
             },
             cancelBtn: function () {
                 this.$children[2].$el.style.display = 'none'
